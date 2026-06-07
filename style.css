@@ -1,0 +1,143 @@
+/* import a google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* apply the font to everything */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* page background and layout */
+body {
+    background-color: #f4f4f4;
+    color: #444242;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: #393a3b;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+/* form section */
+form {
+    background-color: rgb(147, 143, 143);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 14px;
+}
+
+/* text and number inputs */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* add habit button */
+button[type="submit"] {
+    background-color: #1d252e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #4d6d8d;
+}
+
+/* error message */
+#form-error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+/* habit list */
+#habit-list {
+    list-style: none;
+    
+}
+
+/* each habit item */
+#habit-list li {
+    background-color: white;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* habit text */
+#habit-list span {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+/* delete button */
+#habit-list button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
+#habit-list button:hover {
+    background-color: #cc0000;
+}
+
+/* tablet screens */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+}
+
+/* mobile screens */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+}

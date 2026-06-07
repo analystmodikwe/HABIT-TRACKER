@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>habit tracker</title>
+</head>
+<body>
+    <header>
+        <h1>habit tracker</h1>
+
+        <!-- display for habit statistics -->
+        <div>
+            <p>TOTAL HABITS:</p>
+            <p>DONE TODAY:</p>
+            <p>OVERALL COMPLETION:</p>
+        </div>
+    </header>
+
+    <section>
+        <form>
+            <!-- text input for the habit name -->
+            <label for="habit">HABIT NAME:</label>
+            <input type="text" id="habit" name="habit" placeholder="Enter habit name" required>
+            <br></br>
+            <!-- number input for the days per week -->
+            <label for="days-per-week">DAYS PER WEEK:</label>
+            <input type="number" id="days-per-week" name="days-per-week" min="1" max="7" placeholder="Enter" required>
+
+            <br>
+            <!-- category selection -->
+            <label for="category">CATEGORY:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="health">Health</option>
+                <option value="productivity">Productivity</option>
+                <option value="learning">Learning</option>
+                <option value="social">Social</option>
+            </select>
+
+            <!-- submit button -->
+            <button id="add-habit" type="submit">Add Habit</button>
+        </form>
+
+        <ul id="habit-list"><!-- list of habits will be displayed here --></ul>
+        <!-- error message container -->
+        <p id="form-error"> </p>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
